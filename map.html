@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+        function initMap() {
+        var Webdev = {lat: 
+        -24.623380, lng: 25.914325};
+        var map = new google.maps.Map(
+            document.getElementById('map'), {zoom: 1, center: Webdev});
+        var marker = new google.maps.Marker({position: Webdev, map: map});
+        }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXcupCxJW841H0b6ufjNDDyfwd6jwgo_Y&callback=initMap">
+    </script>
+  </body>
+</html>
